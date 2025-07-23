@@ -1,1 +1,100 @@
-<html><body><h1>Dispatch</h1><p>This is the Dispatch page – political stories, field reports, and personal narratives.</p></body></html>
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dispatch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=EB+Garamond&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f6f1ed;
+      font-family: 'EB Garamond', serif;
+      color: #2a2a2a;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 0.2rem;
+    }
+    .subhead {
+      font-size: 1rem;
+      font-style: italic;
+      color: #555;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .entry {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .entry:hover {
+      transform: scale(1.02);
+    }
+    .entry img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .entry-text {
+      padding: 1.2rem;
+    }
+    .entry-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin: 0 0 0.5rem;
+    }
+    .entry-text p {
+      margin: 0 0 1rem;
+    }
+    .entry-text a {
+      text-decoration: none;
+      color: #c06055;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dispatch</h1>
+    <div class="subhead">Political stories, field reports, and personal narratives</div>
+  </header>
+
+  <section class="grid">
+    <div class="entry">
+      <img src="https://via.placeholder.com/400x250" alt="Story Thumbnail">
+      <div class="entry-text">
+        <h2>The Postcolonial Archive</h2>
+        <p>An exploration of language, memory, and digital culture in Nigeria’s evolving media landscape.</p>
+        <a href="story1.html">Read more →</a>
+      </div>
+    </div>
+
+    <div class="entry">
+      <img src="https://via.placeholder.com/400x250" alt="Story Thumbnail">
+      <div class="entry-text">
+        <h2>Letters from the South</h2>
+        <p>Dispatches from rural Nigeria: women, water, and the struggle for infrastructure.</p>
+        <a href="story2.html">Read more →</a>
+      </div>
+    </div>
+
+    <!-- Add more entries as needed -->
+  </section>
+
+</body>
+</html>
