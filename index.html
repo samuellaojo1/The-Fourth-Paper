@@ -1,142 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Fourth Paper</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #fdf4ee;
-      color: #111;
+      font-family: 'Playfair Display', serif;
+      background-color: #fef3ec;
+      color: #1e1e1e;
     }
 
-    header img {
-      width: 100%;
-      max-width: 1300px;
-      display: block;
-      margin: 0 auto;
+    header {
+      background-color: #fef3ec;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .logo {
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .banner-sun {
+      width: 60px;
+      margin: 10px auto;
     }
 
     nav {
-      background-color: #fdf4ee;
-      border-top: 1px dashed #aaa;
-      border-bottom: 1px dashed #aaa;
-      text-align: center;
-      padding: 1em;
-      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      background-color: #f9e9e0;
       font-weight: bold;
     }
 
     nav a {
-      margin: 0 15px;
-      color: #000;
       text-decoration: none;
-      font-size: 1.1em;
+      color: #3d3d3d;
+      font-size: 1.1rem;
     }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
+    .intro {
       text-align: center;
-      padding: 3em 1em;
+      padding: 40px 20px 20px;
     }
 
-    .hero h2 {
+    .intro h2 {
+      font-size: 1.8rem;
       font-style: italic;
-      font-size: 2em;
-      margin-bottom: 0.5em;
-    }
-
-    .hero p {
-      font-size: 1.1em;
-      max-width: 600px;
-      margin: 0 auto;
-      color: #333;
+      margin-bottom: 10px;
     }
 
     .sections {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 2em;
-      gap: 2em;
+      gap: 40px;
+      padding: 40px 20px;
     }
 
-    .section-box {
+    .section-card {
       background: #fff;
-      border: 1px solid #ccc;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-      padding: 2em;
-      max-width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 300px;
       text-align: center;
+      padding: 30px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
-    .section-box img {
-      width: 100%;
-      height: auto;
-      max-height: 150px;
-      object-fit: cover;
-      margin-bottom: 1em;
-    }
-
-    .section-box h3 {
-      font-family: 'Georgia', serif;
-      font-size: 1.3em;
-      margin-bottom: 0.5em;
-    }
-
-    .section-box p {
-      font-size: 1em;
-      color: #555;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #888;
-      padding: 2em 0;
+    .section-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="Aaron (1).png" alt="The Fourth Paper Banner" />
+    <img src="your-sun-image-url-here" alt="Sun Banner" class="banner-sun">
+    <h1 class="logo">The Fourth Paper</h1>
+    <img src="your-sun-image-url-here" alt="Sun Banner" class="banner-sun">
   </header>
 
   <nav>
-    <a href="dispatch.html">Dispatch</a>
-    <a href="analysis.html">Analysis</a>
-    <a href="record.html">The Record</a>
-    <a href="submit.html">Submit</a>
+    <a href="#dispatch">Dispatch</a>
+    <a href="#analysis">Analysis</a>
+    <a href="#record">The Record</a>
+    <a href="#submit">Submit</a>
   </nav>
 
-  <section class="hero">
+  <section class="intro">
     <h2>Who Tells the Truth, and Who Is Heard?</h2>
     <p>Exploring power, policy, and perspective through a newer lens.</p>
   </section>
 
   <section class="sections">
-    <div class="section-box">
-      <img src="dispatch-thumbnail.png" alt="Dispatch Thumbnail" />
+    <div class="section-card" id="dispatch">
       <h3>Dispatch</h3>
       <p>First-person political reflections and protest notes.</p>
     </div>
-    <div class="section-box">
-      <img src="analysis-thumbnail.png" alt="Analysis Thumbnail" />
+    <div class="section-card" id="analysis">
       <h3>Analysis</h3>
       <p>Sharp essays and policy commentary from young thinkers.</p>
     </div>
-    <!-- Add more sections here if needed -->
+    <div class="section-card" id="record">
+      <h3>The Record</h3>
+      <p>Editorials, reviews, and curated archives for political memory.</p>
+    </div>
   </section>
-
-  <footer>
-    © 2025 The Fourth Paper. All rights reserved.
-  </footer>
-
 </body>
 </html>
