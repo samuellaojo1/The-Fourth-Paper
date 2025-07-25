@@ -8,93 +8,101 @@
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background-color: #fff5ef;
-      color: #2d2d2d;
+      background-color: #CB438B; /* Orchid Whisper */
+      color: #ffffff;
     }
 
-    /* 🔼 Banner Image at Top — background blended */
     .banner {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 30px 0 10px;
-      background-color: #fff5ef; /* matches page background */
+      padding: 40px 20px;
+      background-color: #CB438B;
     }
 
-    .banner img {
-      width: 600px;  /* exact size you said was fine */
+    .banner-img {
+      max-width: 100%;
       height: auto;
     }
 
-    /* 🧭 Navigation Bar */
     nav {
       display: flex;
       justify-content: center;
-      background-color: #fceae2;
+      gap: 40px;
+      background-color: #FFF0D2;
       padding: 15px 0;
       font-weight: bold;
+      font-size: 16px;
+      color: #4D3449;
     }
 
     nav a {
-      margin: 0 25px;
       text-decoration: none;
-      color: #2d2d2d;
-      font-size: 18px;
+      color: #4D3449;
+      transition: color 0.3s;
     }
 
-    /* 🖋️ Tagline Text */
+    nav a:hover {
+      color: #6C6A43; /* Mossy Stone */
+    }
+
     .tagline {
       text-align: center;
-      padding: 30px 20px 10px;
-    }
-
-    .tagline h2 {
+      margin: 50px 20px 10px;
+      font-size: 24px;
       font-style: italic;
-      font-size: 28px;
-      margin-bottom: 10px;
     }
 
-    .tagline p {
-      font-size: 18px;
+    .subtitle {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 60px;
+      font-family: 'Courier New', monospace;
     }
 
-    /* 🧱 Three Boxes */
-    .sections {
+    .section-container {
       display: flex;
       justify-content: center;
+      gap: 30px;
       flex-wrap: wrap;
-      padding: 40px 20px;
-      background-color: #fff5ef;
+      padding: 0 30px 80px;
     }
 
-    .section {
-      background: rgba(255, 255, 255, 0.92);
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      width: 300px;
-      margin: 15px;
-      padding: 20px;
+    .section-box {
+      background-color: white;
+      color: #4D3449;
+      padding: 30px 20px;
+      border-radius: 12px;
+      width: 280px;
       text-align: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     }
 
-    .section h3 {
-      font-size: 22px;
+    .section-box h3 {
       margin-bottom: 10px;
     }
 
-    .section p {
-      font-size: 16px;
+    .section-box p {
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .section-container {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- ✅ The banner image (Aaron (1).png) at the top -->
+  <!-- Banner -->
   <div class="banner">
-    <img src="Aaron (1).png" alt="The Fourth Paper Banner" />
+    <img src="FYPBanner2025.png" alt="The Fourth Paper Banner" class="banner-img">
   </div>
 
-  <!-- 🧭 Navigation -->
+  <!-- Navigation -->
   <nav>
     <a href="dispatch.html">Dispatch</a>
     <a href="analysis.html">Analysis</a>
@@ -102,23 +110,21 @@
     <a href="submit.html">Submit</a>
   </nav>
 
-  <!-- ✍️ Tagline -->
-  <div class="tagline">
-    <h2>Who Tells the Truth, and Who Is Heard?</h2>
-    <p>Exploring power, policy, and perspective through a newer lens.</p>
-  </div>
+  <!-- Tagline -->
+  <div class="tagline"><strong>A written information hub</strong></div>
+  <div class="subtitle">Exploring power, policy, and perspective through a newer lens.</div>
 
-  <!-- 🧱 Category Boxes -->
-  <div class="sections">
-    <div class="section">
+  <!-- Category Sections -->
+  <div class="section-container">
+    <div class="section-box">
       <h3>Dispatch</h3>
       <p>First-person political reflections and protest notes.</p>
     </div>
-    <div class="section">
+    <div class="section-box">
       <h3>Analysis</h3>
       <p>Sharp essays and policy commentary from young thinkers.</p>
     </div>
-    <div class="section">
+    <div class="section-box">
       <h3>The Record</h3>
       <p>Editorials, reviews, and curated archives for political memory.</p>
     </div>
