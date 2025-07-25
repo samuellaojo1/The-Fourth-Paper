@@ -5,77 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Fourth Paper</title>
   <style>
+    :root {
+      --orchid: #CB438B;
+      --mossy: #6C6A43;
+      --mulberry: #4D3449;
+    }
+
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #CB438B; /* Orchid Whisper */
-      color: #ffffff;
+      font-family: Georgia, serif;
+      background-color: var(--orchid);
+      color: white;
     }
 
     .banner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 40px 20px;
-      background-color: #CB438B;
+      background-color: var(--orchid);
+      text-align: center;
+      padding: 40px 0;
     }
 
-    .banner-img {
-      max-width: 100%;
+    .banner img {
+      max-width: 500px;
+      width: 100%;
       height: auto;
     }
 
     nav {
       display: flex;
       justify-content: center;
-      gap: 40px;
-      background-color: #FFF0D2;
+      gap: 50px;
+      background-color: var(--mossy);
       padding: 15px 0;
-      font-weight: bold;
-      font-size: 16px;
-      color: #4D3449;
     }
 
     nav a {
+      font-weight: bold;
+      font-size: 16px;
       text-decoration: none;
-      color: #4D3449;
+      color: white;
       transition: color 0.3s;
     }
 
     nav a:hover {
-      color: #6C6A43; /* Mossy Stone */
+      color: var(--mulberry);
     }
 
     .tagline {
       text-align: center;
-      margin: 50px 20px 10px;
-      font-size: 24px;
+      font-size: 26px;
       font-style: italic;
+      font-weight: bold;
+      margin: 50px 20px 10px;
     }
 
     .subtitle {
       text-align: center;
-      font-size: 16px;
-      margin-bottom: 60px;
       font-family: 'Courier New', monospace;
+      font-size: 15px;
+      margin-bottom: 60px;
     }
 
     .section-container {
       display: flex;
       justify-content: center;
-      gap: 30px;
       flex-wrap: wrap;
-      padding: 0 30px 80px;
+      gap: 30px;
+      padding: 0 30px 100px;
     }
 
     .section-box {
       background-color: white;
-      color: #4D3449;
+      color: var(--mulberry);
       padding: 30px 20px;
       border-radius: 12px;
       width: 280px;
       text-align: center;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
 
     .section-box h3 {
@@ -99,7 +104,7 @@
 
   <!-- Banner -->
   <div class="banner">
-    <img src="FYPBanner2025.png" alt="The Fourth Paper Banner" class="banner-img">
+    <img src="banner.png" alt="The Fourth Paper Banner">
   </div>
 
   <!-- Navigation -->
@@ -111,10 +116,10 @@
   </nav>
 
   <!-- Tagline -->
-  <div class="tagline"><strong>A written information hub</strong></div>
+  <div class="tagline">A written information hub</div>
   <div class="subtitle">Exploring power, policy, and perspective through a newer lens.</div>
 
-  <!-- Category Sections -->
+  <!-- Sections -->
   <div class="section-container">
     <div class="section-box">
       <h3>Dispatch</h3>
